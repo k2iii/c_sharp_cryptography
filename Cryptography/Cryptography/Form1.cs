@@ -25,7 +25,14 @@ namespace Cryptography
         {
             CaesarCipher caesarCipher = new CaesarCipher();
             MessageJson message = caesarCipher.HowToTest();
-            this.textBoxCaesarCipher.Text = $"{message.Message}\r\n {message.Encrypt}\r\n {message.Decrypt}";
+            this.textBoxCaesarCipher.Text = $"{message.Message}\r\n{message.Encrypt}\r\n{message.Decrypt}";
+        }
+
+        private void buttonRot13_Click(object sender, EventArgs e)
+        {
+            Rot13Cipher rot13Cipher = new Rot13Cipher();
+            MessageJson message = rot13Cipher.HowToTest();
+            this.textBoxRot13.Text = $"{message.Message}\r\n{message.Encrypt}\r\n{message.Decrypt}";
         }
     }
 }

@@ -30,13 +30,15 @@
         {
             this.buttonCaesarCipher = new System.Windows.Forms.Button();
             this.textBoxCaesarCipher = new System.Windows.Forms.TextBox();
+            this.textBoxRot13 = new System.Windows.Forms.TextBox();
+            this.buttonRot13 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonCaesarCipher
             // 
             this.buttonCaesarCipher.Location = new System.Drawing.Point(12, 12);
             this.buttonCaesarCipher.Name = "buttonCaesarCipher";
-            this.buttonCaesarCipher.Size = new System.Drawing.Size(131, 23);
+            this.buttonCaesarCipher.Size = new System.Drawing.Size(198, 23);
             this.buttonCaesarCipher.TabIndex = 0;
             this.buttonCaesarCipher.Text = "CaesarCipher";
             this.buttonCaesarCipher.UseVisualStyleBackColor = true;
@@ -50,11 +52,31 @@
             this.textBoxCaesarCipher.Size = new System.Drawing.Size(195, 110);
             this.textBoxCaesarCipher.TabIndex = 1;
             // 
+            // textBoxRot13
+            // 
+            this.textBoxRot13.Location = new System.Drawing.Point(219, 51);
+            this.textBoxRot13.Multiline = true;
+            this.textBoxRot13.Name = "textBoxRot13";
+            this.textBoxRot13.Size = new System.Drawing.Size(195, 110);
+            this.textBoxRot13.TabIndex = 3;
+            // 
+            // buttonRot13
+            // 
+            this.buttonRot13.Location = new System.Drawing.Point(216, 12);
+            this.buttonRot13.Name = "buttonRot13";
+            this.buttonRot13.Size = new System.Drawing.Size(198, 23);
+            this.buttonRot13.TabIndex = 2;
+            this.buttonRot13.Text = "ROT13Cipher";
+            this.buttonRot13.UseVisualStyleBackColor = true;
+            this.buttonRot13.Click += new System.EventHandler(this.buttonRot13_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBoxRot13);
+            this.Controls.Add(this.buttonRot13);
             this.Controls.Add(this.textBoxCaesarCipher);
             this.Controls.Add(this.buttonCaesarCipher);
             this.Name = "Form1";
@@ -68,6 +90,8 @@
 
         private System.Windows.Forms.Button buttonCaesarCipher;
         private System.Windows.Forms.TextBox textBoxCaesarCipher;
+        private System.Windows.Forms.TextBox textBoxRot13;
+        private System.Windows.Forms.Button buttonRot13;
     }
 }
 
