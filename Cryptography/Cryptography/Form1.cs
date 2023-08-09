@@ -34,5 +34,12 @@ namespace Cryptography
             MessageJson message = rot13Cipher.HowToTest();
             this.textBoxRot13.Text = $"{message.Message}\r\n{message.Encrypt}\r\n{message.Decrypt}";
         }
+
+        private void buttonRandomCipher_Click(object sender, EventArgs e)
+        {
+            RandomSubstitutionCipher random = new RandomSubstitutionCipher();
+            MessageJson message = random.test();
+            this.textBoxRandomCipher.Text = $"{message.Message}";
+        }
     }
 }
