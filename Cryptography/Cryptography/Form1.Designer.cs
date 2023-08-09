@@ -32,6 +32,8 @@
             this.textBoxCaesarCipher = new System.Windows.Forms.TextBox();
             this.textBoxRot13 = new System.Windows.Forms.TextBox();
             this.buttonRot13 = new System.Windows.Forms.Button();
+            this.textBoxRandomCipher = new System.Windows.Forms.TextBox();
+            this.buttonRandomCipher = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonCaesarCipher
@@ -70,11 +72,31 @@
             this.buttonRot13.UseVisualStyleBackColor = true;
             this.buttonRot13.Click += new System.EventHandler(this.buttonRot13_Click);
             // 
+            // textBoxRandomCipher
+            // 
+            this.textBoxRandomCipher.Location = new System.Drawing.Point(423, 51);
+            this.textBoxRandomCipher.Multiline = true;
+            this.textBoxRandomCipher.Name = "textBoxRandomCipher";
+            this.textBoxRandomCipher.Size = new System.Drawing.Size(195, 110);
+            this.textBoxRandomCipher.TabIndex = 5;
+            // 
+            // buttonRandomCipher
+            // 
+            this.buttonRandomCipher.Location = new System.Drawing.Point(420, 12);
+            this.buttonRandomCipher.Name = "buttonRandomCipher";
+            this.buttonRandomCipher.Size = new System.Drawing.Size(198, 23);
+            this.buttonRandomCipher.TabIndex = 4;
+            this.buttonRandomCipher.Text = "RandomCipher";
+            this.buttonRandomCipher.UseVisualStyleBackColor = true;
+            this.buttonRandomCipher.Click += new System.EventHandler(this.buttonRandomCipher_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBoxRandomCipher);
+            this.Controls.Add(this.buttonRandomCipher);
             this.Controls.Add(this.textBoxRot13);
             this.Controls.Add(this.buttonRot13);
             this.Controls.Add(this.textBoxCaesarCipher);
@@ -92,6 +114,8 @@
         private System.Windows.Forms.TextBox textBoxCaesarCipher;
         private System.Windows.Forms.TextBox textBoxRot13;
         private System.Windows.Forms.Button buttonRot13;
+        private System.Windows.Forms.TextBox textBoxRandomCipher;
+        private System.Windows.Forms.Button buttonRandomCipher;
     }
 }
 
