@@ -46,6 +46,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cipher\AffineCipher.cs" />
+    <Compile Include="Cipher\AffineCipher2.cs" />
     <Compile Include="Cipher\CaesarCipher.cs" />
     <Compile Include="Cipher\MultiCipher.cs" />
     <Compile Include="Cipher\RandomSubstitutionCipher.cs" />

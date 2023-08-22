@@ -46,5 +46,21 @@ namespace Cryptography
             MessageJson message = multiCipher.HowToTest();
             this.textBoxMulticipher.Text = $"{message.Message}\r\n{message.Encrypt}\r\n{message.Decrypt}";
         }
+
+        private void buttonAffineCipher_Click(object sender, EventArgs e)
+        {
+            // C = 7 * P + 5;
+            AffineCipher affineCipher = new AffineCipher(7, 5);
+            MessageJson message = affineCipher.HowToTest();
+            this.textBoxAffineCipher.Text = $"{message.Message}\r\n{message.Encrypt}\r\n{message.Decrypt}";
+        }
+
+        private void buttonAffineCipher2_Click(object sender, EventArgs e)
+        {
+            // C = 7 * P + 5;
+            AffineCipher2 affineCipher2 = new AffineCipher2(7, 5);
+            MessageJson message = affineCipher2.HowToTest();
+            this.textBoxAffineCipher2.Text = $"{message.Message}\r\n{message.Encrypt}\r\n{message.Decrypt}";
+        }
     }
 }

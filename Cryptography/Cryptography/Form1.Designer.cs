@@ -36,6 +36,10 @@
             this.buttonRandomCipher = new System.Windows.Forms.Button();
             this.textBoxMulticipher = new System.Windows.Forms.TextBox();
             this.buttonMultiCipher = new System.Windows.Forms.Button();
+            this.textBoxAffineCipher = new System.Windows.Forms.TextBox();
+            this.buttonAffineCipher = new System.Windows.Forms.Button();
+            this.textBoxAffineCipher2 = new System.Windows.Forms.TextBox();
+            this.buttonAffineCipher2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonCaesarCipher
@@ -110,11 +114,51 @@
             this.buttonMultiCipher.UseVisualStyleBackColor = true;
             this.buttonMultiCipher.Click += new System.EventHandler(this.buttonMultiCipher_Click);
             // 
+            // textBoxAffineCipher
+            // 
+            this.textBoxAffineCipher.Location = new System.Drawing.Point(831, 51);
+            this.textBoxAffineCipher.Multiline = true;
+            this.textBoxAffineCipher.Name = "textBoxAffineCipher";
+            this.textBoxAffineCipher.Size = new System.Drawing.Size(195, 110);
+            this.textBoxAffineCipher.TabIndex = 9;
+            // 
+            // buttonAffineCipher
+            // 
+            this.buttonAffineCipher.Location = new System.Drawing.Point(828, 12);
+            this.buttonAffineCipher.Name = "buttonAffineCipher";
+            this.buttonAffineCipher.Size = new System.Drawing.Size(198, 23);
+            this.buttonAffineCipher.TabIndex = 8;
+            this.buttonAffineCipher.Text = "AffineCipher";
+            this.buttonAffineCipher.UseVisualStyleBackColor = true;
+            this.buttonAffineCipher.Click += new System.EventHandler(this.buttonAffineCipher_Click);
+            // 
+            // textBoxAffineCipher2
+            // 
+            this.textBoxAffineCipher2.Location = new System.Drawing.Point(1035, 51);
+            this.textBoxAffineCipher2.Multiline = true;
+            this.textBoxAffineCipher2.Name = "textBoxAffineCipher2";
+            this.textBoxAffineCipher2.Size = new System.Drawing.Size(195, 110);
+            this.textBoxAffineCipher2.TabIndex = 11;
+            // 
+            // buttonAffineCipher2
+            // 
+            this.buttonAffineCipher2.Location = new System.Drawing.Point(1032, 12);
+            this.buttonAffineCipher2.Name = "buttonAffineCipher2";
+            this.buttonAffineCipher2.Size = new System.Drawing.Size(198, 23);
+            this.buttonAffineCipher2.TabIndex = 10;
+            this.buttonAffineCipher2.Text = "AffineCipher2";
+            this.buttonAffineCipher2.UseVisualStyleBackColor = true;
+            this.buttonAffineCipher2.Click += new System.EventHandler(this.buttonAffineCipher2_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 450);
+            this.Controls.Add(this.textBoxAffineCipher2);
+            this.Controls.Add(this.buttonAffineCipher2);
+            this.Controls.Add(this.textBoxAffineCipher);
+            this.Controls.Add(this.buttonAffineCipher);
             this.Controls.Add(this.textBoxMulticipher);
             this.Controls.Add(this.buttonMultiCipher);
             this.Controls.Add(this.textBoxRandomCipher);
@@ -140,6 +184,10 @@
         private System.Windows.Forms.Button buttonRandomCipher;
         private System.Windows.Forms.TextBox textBoxMulticipher;
         private System.Windows.Forms.Button buttonMultiCipher;
+        private System.Windows.Forms.TextBox textBoxAffineCipher;
+        private System.Windows.Forms.Button buttonAffineCipher;
+        private System.Windows.Forms.TextBox textBoxAffineCipher2;
+        private System.Windows.Forms.Button buttonAffineCipher2;
     }
 }
 
