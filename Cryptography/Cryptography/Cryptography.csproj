@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Cipher\CaesarCipher.cs" />
+    <Compile Include="Cipher\MultiCipher.cs" />
     <Compile Include="Cipher\RandomSubstitutionCipher.cs" />
     <Compile Include="Cipher\Rot13Cipher.cs" />
     <Compile Include="Common\MessageJson.cs" />

@@ -31,7 +31,7 @@ namespace Cryptography.Cipher
             }
 
             MessageJson json = new MessageJson();
-            json.Message = table.ToString();
+            json.Message = new string(table);
 
             return json;
         }

@@ -41,5 +41,12 @@ namespace Cryptography
             MessageJson message = random.test();
             this.textBoxRandomCipher.Text = $"{message.Message}";
         }
+
+        private void buttonMultiCipher_Click(object sender, EventArgs e)
+        {
+            MultiCipher multiCipher = new MultiCipher();
+            MessageJson message = multiCipher.HowToTest();
+            this.textBoxMulticipher.Text = $"{message.Message}\r\n{message.Encrypt}\r\n{message.Decrypt}";
+        }
     }
 }
