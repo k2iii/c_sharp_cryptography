@@ -40,6 +40,8 @@
             this.buttonAffineCipher = new System.Windows.Forms.Button();
             this.textBoxAffineCipher2 = new System.Windows.Forms.TextBox();
             this.buttonAffineCipher2 = new System.Windows.Forms.Button();
+            this.textBoxVigenereCipher = new System.Windows.Forms.TextBox();
+            this.buttonVigenereCipher = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // buttonCaesarCipher
@@ -150,11 +152,31 @@
             this.buttonAffineCipher2.UseVisualStyleBackColor = true;
             this.buttonAffineCipher2.Click += new System.EventHandler(this.buttonAffineCipher2_Click);
             // 
+            // textBoxVigenereCipher
+            // 
+            this.textBoxVigenereCipher.Location = new System.Drawing.Point(1239, 51);
+            this.textBoxVigenereCipher.Multiline = true;
+            this.textBoxVigenereCipher.Name = "textBoxVigenereCipher";
+            this.textBoxVigenereCipher.Size = new System.Drawing.Size(195, 110);
+            this.textBoxVigenereCipher.TabIndex = 13;
+            // 
+            // buttonVigenereCipher
+            // 
+            this.buttonVigenereCipher.Location = new System.Drawing.Point(1236, 12);
+            this.buttonVigenereCipher.Name = "buttonVigenereCipher";
+            this.buttonVigenereCipher.Size = new System.Drawing.Size(198, 23);
+            this.buttonVigenereCipher.TabIndex = 12;
+            this.buttonVigenereCipher.Text = "VigenereCipher";
+            this.buttonVigenereCipher.UseVisualStyleBackColor = true;
+            this.buttonVigenereCipher.Click += new System.EventHandler(this.buttonVigenereCipher_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1904, 450);
+            this.Controls.Add(this.textBoxVigenereCipher);
+            this.Controls.Add(this.buttonVigenereCipher);
             this.Controls.Add(this.textBoxAffineCipher2);
             this.Controls.Add(this.buttonAffineCipher2);
             this.Controls.Add(this.textBoxAffineCipher);
@@ -188,6 +210,8 @@
         private System.Windows.Forms.Button buttonAffineCipher;
         private System.Windows.Forms.TextBox textBoxAffineCipher2;
         private System.Windows.Forms.Button buttonAffineCipher2;
+        private System.Windows.Forms.TextBox textBoxVigenereCipher;
+        private System.Windows.Forms.Button buttonVigenereCipher;
     }
 }
 

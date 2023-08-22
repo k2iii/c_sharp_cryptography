@@ -62,5 +62,12 @@ namespace Cryptography
             MessageJson message = affineCipher2.HowToTest();
             this.textBoxAffineCipher2.Text = $"{message.Message}\r\n{message.Encrypt}\r\n{message.Decrypt}";
         }
+
+        private void buttonVigenereCipher_Click(object sender, EventArgs e)
+        {
+            VigenereCipher vigenereCipher = new VigenereCipher();
+            MessageJson message = vigenereCipher.HowToTest();
+            this.textBoxVigenereCipher.Text = $"{message.Message}\r\n{message.Encrypt}\r\n{message.Decrypt}";
+        }
     }
 }
