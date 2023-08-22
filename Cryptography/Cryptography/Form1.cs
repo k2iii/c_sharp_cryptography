@@ -17,8 +17,6 @@ namespace Cryptography
         public Form1()
         {
             InitializeComponent();
-
-
         }
 
         private void buttonCaesarCipher_Click(object sender, EventArgs e)
